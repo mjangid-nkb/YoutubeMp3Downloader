@@ -3,6 +3,7 @@ openpyxl
 
 streamlit
 yt-dlp
+imageio-ffmpeg
 langchain-huggingface
 huggingface-hub
 python-dotenv
