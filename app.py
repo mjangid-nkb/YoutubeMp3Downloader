@@ -38,7 +38,12 @@ def download_audio_mp3(youtube_url, out_dir=None):
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
-        'ffmpeg_location': ffmpeg.get_ffmpeg_exe(),  # Use static ffmpeg
+        'ffmpeg_location': ffmpeg.get_ffmpeg_exe(),
+        'nocheckcertificate': True,
+        'noplaylist': True,
+        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+                      '(KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        'geo_bypass': True,
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
