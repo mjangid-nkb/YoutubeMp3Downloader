@@ -1,3 +1,8 @@
-streamlit
 pandas
 openpyxl
+
+streamlit
+yt-dlp
+langchain-huggingface
+huggingface-hub
+python-dotenv
